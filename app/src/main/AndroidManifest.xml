@@ -1,0 +1,28 @@
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.todoapp.arsybai">
+	<application
+		android:allowBackup="true"
+		android:label="Todo-list"
+		android:icon="@drawable/app_icon"
+		android:largeHeap="true"
+		android:theme="@style/AppTheme">
+		<activity
+			android:name=".MainActivity"
+			android:configChanges="orientation|screenSize"
+			android:theme="@style/AppTheme.FullScreen"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action	android:name="android.intent.action.MAIN"/>
+				<category	android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".TodoActivity"
+			android:configChanges="orientation|screenSize"
+			android:screenOrientation="portrait"/>
+		<uses-library
+			android:name="org.apache.http.legacy"
+			android:required="false"/>
+	</application>
+</manifest>
