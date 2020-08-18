@@ -162,15 +162,15 @@ public class TodoActivity extends AppCompatActivity {
 	
 	@Override
 	public void onBackPressed() {
-		dbl.setTitle("ᛖᛪᛁᛏ?");
-		dbl.setMessage("ᚨᚱᛖ ᚤᛟᚢ ᛋᚢᚱᛖ ᚹᚨᚾᛏ ᛏᛟ ᛖᛪᛁᛏ?");
-		dbl.setPositiveButton("ᚤᛖᛋ", new DialogInterface.OnClickListener() {
+		dbl.setTitle("Exit App");
+		dbl.setMessage("Are you sure want to exit ??");
+		dbl.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
 			@Override
 			public void onClick(DialogInterface _dialog, int _which) {
 				finish();
 			}
 		});
-		dbl.setNegativeButton("ᚾᛟ", new DialogInterface.OnClickListener() {
+		dbl.setNegativeButton("No", new DialogInterface.OnClickListener() {
 			@Override
 			public void onClick(DialogInterface _dialog, int _which) {
 				
